@@ -407,138 +407,377 @@
             </ul>
         </div>
     </nav>
+
+
     <div class="arrivals">
         <div class="contain arrivals_container">
             <h1 class="arrivals_h1">New Arrivals </h1>
             <ul class="bread_list">
                 <li class="bread_item"><a href="index.html" class="bread_link">home</a></li>
-                <li class="bread_item"><a href="product.html" class="bread_link">men</a></li>
-                <li class="bread_item last_bread_item">new arrivals</li>
+                <li class="bread_item last_bread_item">men</li>
             </ul>
-
         </div>
     </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/slider1.jpg" class="d-block w-100" alt="Slide1">
-          </div>
-          <div class="carousel-item">
-            <img src="images/slider1.jpg" class="d-block w-100" alt="Slide2">
-          </div>
-          <div class="carousel-item">
-            <img src="images/slider1.jpg" class="d-block w-100" alt="Slide3">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    
+    <div class="catalog">
+        <div class="contain catalog__contain">
+            <nav class="catalog-menu">
 
-    <div class="to_card">
-        <div class="container to_card_container">
-            <span class="to_card_collection">
-                WOMEN COLLECTION
-            </span>
-            <div class="to_card_devider">
-                <div class="to_card_line"></div>
-            </div>
-            <span class="to_card_name">Moschino Cheap And Chic</span>
-            <p class="to_card_desc">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-            <div class="to_card_param">
-                <p class="to_card_material">MATERIAL: <span class="to_card_bold">COTTON</span> </p>
-                <p class="to_card_designer">DESIGNER: <span class="to_card_bold">BINBURHAN</span></p>                
-            </div>
-            <span class="to_card_price">$561</span>
-            <div class="to_card_devider_two"></div>
-            <div class="to_card_choose">
-
-                <form class="to_card_form">
-                    <div class="to_card_lists">
-                        <div class="to_card_choose_item">
-                            <label for="color-select"><span class="to_card_choose_text">CHOOSE COLOR</span></label>
-                            <select name="color" class="card_select" id="color-select">
-                                <option value="Red" class="option_red">                                    
-                                    <p>Red</p></option>
-                                <option value="Green">Green</option>
-                                <option value="Blue">Blue</option>
-                            </select>
+                
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Category
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="accordion-menu-list">
+                                <li class="accordion-menu">
+                                    <a href="product.html">Accessories</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Bags</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Denim</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Hoodies & Sweatshirts</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Jackets & Coats </a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Pants</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Polos</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Shirts</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Shoes</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Shorts</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Sweaters & Knits</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">T-Shirts</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Tanks</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="to_card_choose_item">
-                            <label for="size-select"><span class="to_card_choose_text">CHOOSE SIZE</span></label>
-                            <select name="color" class="card_select"  id="size-select">
-                                <option value="XXL">XXL </option>
-                                <option value="XL">XL</option>
-                                <option value="L">L</option>
-                            </select>
-                        </div>
-                        <div class="to_card_choose_item">
-                            <label for="q-select"><span class="to_card_choose_text">QUANTITY</span></label>
-
-                            <input type="number" name="quantity" class="card_q" id="q-select">
-                        </div>
+                      </div>
                     </div>
-                    <button class="to_card_button">Add to cart</button>
-                </form>
-
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            BRAND
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="accordion-menu-list">
+                                <li class="accordion-menu">
+                                    <a href="product.html">Adidas</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Under Armour</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Nike</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Patagonia</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">TNF</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Arc'teryx</a>
+                                </li>
+         
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            dESIGNER
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="accordion-menu-list">
+                                <li class="accordion-menu">
+                                    <a href="product.html">John Doe</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Mia Wong</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Harry Black</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Lili</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Salome Simoes</a>
+                                </li>
+                                <li class="accordion-menu">
+                                    <a href="product.html">Ang Li</a>
+                                </li>
+         
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+            <div class="catalog-products">
+                <div class="catalog-options">
+                    <div class="options-brand">
+                        <h3 class="options-title">Trending now</h3> 
+                        <ul class="brand-list brand-list_first">
+                            <li class="brand-list-item"><a href="#" class="brand-list-link">Bohemian</a> </li>
+                            <li class="brand-list-divider"></li>
+                            <li class="brand-list-item"><a href="#" class="brand-list-link">Floral</a> </li>
+                            <li class="brand-list-divider"></li>
+                            <li class="brand-list-item"><a href="#" class="brand-list-link">Lase</a> </li>
+                        </ul>
+                        <ul class="brand-list">
+                            <li class="brand-list-item"><a href="#" class="brand-list-link">Floral</a> </li>
+                            <li class="brand-list-divider"></li>
+                            <li class="brand-list-item"><a href="#" class="brand-list-link">Lase</a> </li>
+                            <li class="brand-list-divider"></li>
+                            <li class="brand-list-item"><a href="#" class="brand-list-link">Bohemian</a> </li>
+                        </ul>
+                    </div>
+                    <div class="options-size">
+                        <h3 class="options-title">Size </h3>
+                        <form class="size-form">    
+                        <div class="size-list">                            
+                                <div class="size-boxes">
+                                    <div class="size-list-box">
+                                        <input type="checkbox" class="size-check" value="XXS" 
+                                        name="sizeXXS" checked="checked"><label for="sizeXXS"></label>
+                                    </div>
+                                    <div class="size-list-label">
+                                        XXS
+                                    </div>
+                                </div>    
+                                <div class="size-boxes">
+                                    <div class="size-list-box">
+                                        <input type="checkbox" class="size-check" value="XS" 
+                                        name="sizeXS"><label for="sizeXS"></label>
+                                    </div>
+                                    <div class="size-list-label">
+                                        XS
+                                    </div>
+                                </div>       
+                                <div class="size-boxes">
+                                    <div class="size-list-box">
+                                        <input type="checkbox" class="size-check" value="S" 
+                                        name="sizeS"><label for="sizeS"></label>
+                                    </div>
+                                    <div class="size-list-label">
+                                        S
+                                    </div>
+                                </div>     
+                                <div class="size-boxes">
+                                    <div class="size-list-box">
+                                        <input type="checkbox" class="size-check" value="M" 
+                                        name="sizeM"><label for="sizeM"></label>
+                                    </div>
+                                    <div class="size-list-label">
+                                        M
+                                    </div>
+                                </div>     
+                                <div class="size-boxes">
+                                    <div class="size-list-box">
+                                        <input type="checkbox" class="size-check" value="L" 
+                                        name="sizeL"><label for="sizeL"></label>
+                                    </div>
+                                    <div class="size-list-label">
+                                        L
+                                    </div>
+                                </div>     
+                                <div class="size-boxes">
+                                    <div class="size-list-box">
+                                        <input type="checkbox" class="size-check" value="XL" 
+                                        name="sizeXL"><label for="sizeXL"></label>
+                                    </div>
+                                    <div class="size-list-label">
+                                        XL
+                                    </div>
+                                </div>     
+                                <div class="size-boxes">
+                                    <div class="size-list-box">
+                                        <input type="checkbox" class="size-check" value="XXL" 
+                                        name="sizeXXL"><label for="sizeXXL"></label>
+                                    </div>
+                                    <div class="size-list-label">
+                                        XXL
+                                    </div>
+                                </div>                                 
+                           
+                        </div>       
+                        </form>             
+                    </div>
+                    <div class="options-price"><h3 class="options-title">pRICE</h3>
+                    <div class="price-list">
+                        <input id="range" class="price-pic" type="range" value="10" step="0.1">
+                    </div>
+                    <div class="price-numbers">
+                        <div class="price-numbers-item">$52</div>
+                        <div class="price-numbers-item">$400</div>
+                    </div>
+                    </div>
+                </div>            
+                <div class="catalog-sorting">
+                    <label for="sort" class="catalog-select-label">Sort by</label>
+                    <select name="sort" class="catalog-select" id="color-select">
+                        <option value="Name" class="option_name">                                    
+                            <p>Name</p></option>
+                        <option value="Price">Price</option>
+                        <option value="Year">Year</option>
+                    </select>  
+    
+                    <label for="show" class="catalog-select-label">Show</label>
+                    <select name="show" class="catalog-select" id="color-select">
+                        <option value="9" class="option_name">                                    
+                            <p>9</p></option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                    </select>          
+                                  
+                </div>
+                
+                <div class="catalog-list">
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_13.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_14.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_03.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_15.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_08.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_16.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_06.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_17.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                    <div class="products_item">
+                        <a href="singlepage.html" class="products_link">                    
+                                <img src="images/product_18.jpg" alt="Mango  People  T-shirt" class="product_image">
+                                <p class="products_title">Mango People  T-shirt</p>
+                                <p class="products_price">$52.00</p>                    
+                        </a>
+                        <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
+                    </div>
+                </div>
+                <div class="catalog_pagination">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <span class="page-link"><i class="fas fa-chevron-left"></i></span>
+                          </li>
+                          <li class="page-item active"><span class="page-link">1</span></li>
+                          <li class="page-item" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item" aria-current="page">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item" aria-current="page">
+                            <a class="page-link" href="#">4</a>
+                          </li>
+                          <li class="page-item" aria-current="page">
+                            <a class="page-link" href="#">5</a>
+                          </li>
+                          <li class="page-item" aria-current="page">
+                            <a class="page-link" href="#">6</a>
+                          </li>
+                          <li class="page-item" aria-current="page">
+                            <a class="page-link" href="#">...</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">20</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                          </li>
+                        </ul>
+                      </nav>   
+                      <div class="pagination-button">
+                          <a href="product.html" class="button button_white">View all</a>
+                      </div>            
+                </div>
             </div>
-        </div>
+    
+        </div>    
     </div>
 
-
-
-
-
-    <div class="products">
-        <div class="contain">
-            <h2 class="see_more_header">
-                You may like also
-            </h2>
-            <div class="products_list">
-                <div class="products_item">
-                    <a href="#" class="products_link">                    
-                            <img src="images/product_09.jpg" alt="Mango  People  T-shirt" class="product_image">
-                            <p class="products_title grey_title">BLAZE LEGGINGS</p>
-                            <p class="products_price">$52.00</p>                    
-                    </a>
-                    <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
-                </div>
-                <div class="products_item">
-                    <a href="#" class="products_link">                    
-                            <img src="images/product_10.jpg" alt="Mango  People  T-shirt" class="product_image">
-                            <p class="products_title grey_title">ALEXA SWEATER</p>
-                            <p class="products_price">$52.00</p>                    
-                    </a>
-                    <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
-                </div>
-                <div class="products_item">
-                    <a href="#" class="products_link">                    
-                            <img src="images/product_11.jpg" alt="Mango  People  T-shirt" class="product_image">
-                            <p class="products_title grey_title">AGNES TOP</p>
-                            <p class="products_price">$52.00</p>                    
-                    </a>
-                    <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
-                </div>
-                <div class="products_item">
-                    <a href="#" class="products_link">                    
-                            <img src="images/product_12.jpg" alt="Mango  People  T-shirt" class="product_image">
-                            <p class="products_title grey_title">SYLVA SWEATER</p>
-                            <p class="products_price">$52.00</p>                    
-                    </a>
-                    <a href="#" class="products_add_link"> <img src="images/basket_white.svg" alt="Basket"> Add to card</a>
-                </div>
-              
-            </div>
-        </div>
-
-    </div>
-
+    
     <div class="testim">
         <div class="contain testim_container">
             <div class="testimonial">
@@ -601,7 +840,7 @@
                         <li><a href="#" class="footer_nav_link">About</a></li>
                         <li><a href="#" class="footer_nav_link">How it works</a></li>
                         <li><a href="#" class="footer_nav_link">Contact</a></li>
-                    </ul>     
+                    </ul>   
                 </nav>
             </div>
             <div class="footer_nav_item">

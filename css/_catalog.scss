@@ -1,0 +1,281 @@
+.catalog {
+    margin-top: 70px;
+}
+
+.catalog__contain {
+    display: flex;   
+    justify-content: space-between; 
+}
+
+.catalog-menu {
+    width: 250px;
+}
+
+.accordion-item {
+    border: 0;
+    border-radius: 0;
+}
+
+.accordion-button {    
+    border-left: 5px solid $redpink;    
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    @include grey-text;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 11px 15px 11px;
+    &:after {
+        background-image: url("../images/carret-down-pink.svg");
+        background-size: 70%;
+        background-position: center;
+        transition: transform .2s ease-in-out;
+    }
+    &:focus {
+        border-left: 5px solid $redpink;  
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    }
+}
+
+
+.accordion * {outline: 0 !important;}
+
+.accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/carret-down-pink.svg");
+    transform: rotate(180deg);
+    background-size: 70%;
+    background-position: center;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-menu-list {
+    list-style: none;
+}
+
+.accordion-menu {
+    margin-top: 13px;
+    a{
+        display: block;
+        @include grey-text;
+        &:hover {
+            color: $pink;
+        }
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: $redpink;
+}
+
+.catalog-options {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.options-brand, .options-size, .options-price {
+    width: 260px;    
+}
+.options-title {
+    @include grey-text;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.brand-list {
+    list-style: none;
+    display: flex;
+    width: 176px;
+    justify-content: space-between;
+    align-items: center;
+    &_first {
+        margin-top: 25px;
+    }
+}
+
+.brand-list-link {
+    @include grey-text;
+    text-decoration: none;
+    &:hover {
+        color: $pink;
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
+
+.brand-list-divider {
+    width: 2px;
+    height: 14px;
+    display: block;
+    background-color: #dfdfdf;
+    box-shadow: 0 0px 1px rgb(63, 61, 61);
+}
+
+.size-list{
+    display: flex;
+    width: 260px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.size-boxes {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.size-list-label {
+    @include grey-text;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.size-boxes:hover .size-list-label {
+    color: $pink;
+}
+
+.size-boxes label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    
+}
+
+.size-boxes input[type=checkbox]:checked + label:after {    
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-color: $pink;
+    position: absolute;
+    top:0;
+    left:0;
+    
+}
+
+.size-list-box {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    position: relative;
+}
+
+.size-check {
+    width: 50px;
+    height: 13px;   
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.price-list {
+    width: 265px;
+    margin-top: 25px;
+}
+
+.price-numbers {
+    @include grey-text;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-pic {
+    width: 100%;
+}
+
+.catalog-sorting {
+    height: 50px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 846px;
+    justify-content: space-between;
+}
+
+.catalog-select, .catalog-select-label {
+    padding: 6px 8px;
+    border: 1px solid $light;
+    outline: none;    
+    background-color: white;
+    @include grey-text;
+}
+
+.catalog-select-label {
+    margin-left: 10px;
+}
+
+.catalog-select {
+    border-left: 0;
+    padding-right: 28px;
+    appearance: none;    
+    background-image: url("../images/caret-down.svg"); 
+    background-repeat:  no-repeat;
+    background-position:  top 15px right 10px;
+    background-size: 14%;    
+}
+
+.catalog_pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-link {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 0;
+    border-left: 0;
+    font-size: 16px;
+    color: #c4c4c4;
+    font-weight: 700;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    &:hover {
+        color: $pink;
+        background-color: #fff;
+    }
+    &:focus {
+        color: $pink;
+        background-color: #fff;
+        box-shadow: none;        
+    }
+}
+
+.page-item:first-of-type .page-link {
+    border-left: 1px solid #ebebeb;
+}
+
+.page-item:last-of-type .page-link {
+    border-right: 1px solid #ebebeb;
+}
+
+.page-item.active .page-link{
+    background-color: white;
+    border-color: #ebebeb;   
+    color: $pink; 
+}
+
+.page-item.disabled .page-link{
+    color: #dadada;
+}
+

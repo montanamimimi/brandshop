@@ -1,0 +1,133 @@
+
+/* Header */
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $white-grey;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_item, .logo_container, .header_search  {
+    display: flex;
+    align-items: center;    
+}
+
+.logon_link, .login_link {
+    display: block;
+}
+
+.logo_img {
+    width: 59px;
+    height: 51px;
+}
+
+.logo_text {
+    text-transform: uppercase;
+    color: $dark;
+    font-size: 27px;
+    font-weight: 300;
+    letter-spacing: 0.68px;
+    margin-left: 13px;
+}
+
+.logo_d {
+    color: $pink;
+    font-weight: 700;
+}
+
+.header_search {
+    margin-left: 37px;
+}
+  
+.header-browse-btn {
+    font-size: 14px;
+    color: $dark;
+    width: 87px;
+    height: 38px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    border-right: 0;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+    cursor: pointer;
+    list-style: none;
+    displaY: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+        content: "";
+        background: url('../images/caret-right-solid.svg') no-repeat;
+        background-size: 6px 10px;
+        width: 6px;
+        height: 10px;
+        margin-left: 10px;
+    }
+    &:hover:after {
+        content: "";
+        background: url('../images/caret-down.svg') no-repeat;
+        background-size: 10px 6px;
+        width: 10px;
+        height: 6px;
+        margin-left: 10px;
+    }
+  }
+
+.search_text {
+    width: 280px;
+    height: 38px;    
+    border: 1px solid #e6e6e6;   
+    border-right: 0; 
+    background-color: $white;
+    outline: none;
+    padding: 16px 18px;
+    font-size: 14px;
+    color: #a4a4a4;
+    
+}
+
+.search_button {
+    background-color: white;
+    height: 38px; 
+    width: 38px;
+    border: 1px solid #e6e6e6; 
+    border-radius: 0 3px 3px 0;  
+    cursor: pointer;
+
+}
+
+.fa-search {
+    color: #a4a4a4;
+    height: 14px;
+    width: 14px;
+}
+
+.search_button:hover .fa-search {
+    color: $pink;
+}
+
+
+
+.login {
+    padding-left: 8px;
+}
+
+.login_link {
+    padding-right: 12px;
+}
+
+.basket_img {
+    height: 32px;
+    width: 36px;
+}
+
+.basket_img:hover {
+    height: 34px;
+    width: 38px;
+}

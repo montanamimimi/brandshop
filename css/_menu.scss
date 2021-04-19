@@ -1,0 +1,166 @@
+
+/*  Menu */
+
+.menu {
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+.menu_container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_list {
+    display: flex;
+    list-style: none;
+}
+
+
+.menu_link {
+    text-transform: uppercase;
+    color: $dark;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 20px;
+}
+
+.menu_link:hover {
+    color: $pink;
+}
+
+/* Megamenu */
+
+.menu_list_item {
+    position: relative;
+}
+
+.megamenu {
+    background-color: $white;
+    padding: 20px 25px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+}
+
+.megamenu_center {
+    left: -150px;
+}
+
+.megamenu_right {
+    left: -450px;
+}
+
+.megamenu_left:before {
+    content: "";
+    display: block;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background-color: $white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -7px;
+    left: 55px;
+    transform: rotate(45deg);
+}
+
+.megamenu_center:before {
+    content: "";
+    display: block;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background-color: $white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -7px;
+    left: 200px;
+    transform: rotate(45deg);
+}
+
+.megamenu_right:before {
+    content: "";
+    display: block;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background-color: $white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -7px;
+    left: 535px;
+    transform: rotate(45deg);
+}
+
+.menu_list_item:hover .megamenu {
+    display: flex;
+}
+
+.header-browse:hover .megamenu {
+    display: flex;
+    top: 65px;
+}
+
+.megamenu_item {
+    width: 235px;
+    margin-right: 45px;
+} 
+
+.megamenu_item:last-of-type {
+    margin-right: 0;
+}
+
+.megamenu_h3 {
+    color: #232323;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 6px;
+}
+
+.megamenu_devider {
+    height: 36px;
+}
+
+.megamenu_ul {
+    list-style: none;
+}
+
+.megamenu_link {
+    color: #646464;
+    font-size: 14px;
+    display: block;
+    padding-top: 13px;
+}
+
+.megamenu_link:hover {
+    color: $pink;
+}
+
+.mega_sale {
+    width: 255px;
+    height: 118px;
+    margin-top: 30px;
+    background: url('../images/megamenu_img.jpg') no-repeat;
+    position: relative;
+    left: -20px;
+}
+
+.mega_sale_link {
+    display: block;
+}
+
+.mega_sale_text {
+    text-align: right;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
