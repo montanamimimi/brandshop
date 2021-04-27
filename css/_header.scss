@@ -131,3 +131,96 @@ header {
     height: 34px;
     width: 38px;
 }
+
+.basket-item {
+    padding: 10px;
+}
+
+.basket-item .megamenu {
+    padding: 20px 17px;
+    width: 262px;
+}
+
+.basket-megamenu {
+    flex-direction: column;
+}
+
+.basket-link {
+    color: white;
+}
+
+.basket-product {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.basket-pruduct-first {
+    padding-top: 0;
+}
+
+.basket-product-desc {
+    height: 100%;
+}
+
+.basket-product-price {
+    margin-top: 6px;
+    color: #f16d7f;
+    font-size: 12px;
+}
+
+
+.basket-product-link {
+    display: block;
+    width: 100%;
+}
+
+.basket-product-rating {
+    margin-top: 4px;
+    color: #e4af48;
+    font-size: 12px;
+}
+
+.basket-product-name {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.basket-product-del {
+    color: #c0c0c0;
+}
+
+
+.checkout_button {
+    margin-top: 25px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid $pink;
+    background-color: white;
+    color: $pink;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    line-height: 50px;
+    text-align: center;
+}
+
+.checkout_button:hover {
+    background-color: $pink;
+    color: white;
+}
+
+.white-button_chekout {
+    padding: 0;
+    height: 50px;
+    margin: 0;
+    line-height: 50px;
+}
+
