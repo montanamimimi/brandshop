@@ -475,125 +475,143 @@
         </div>
     </div>
     
-    <div class="checkout">
+    <div class="cart">
         <div class="contain">
-            <div class="accordion accordion_checkout" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button accordion-button_checkout" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        01.   Shipping Adress
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div class="shipping">
-                            <div class="shipping-item">
-                                <p class="shipping-text_dark">Check as a guest or register</p>
-                                <p class="shipping-text">Register with us for future convenience</p>
-                                <form action="" class="register-form">
-                                    <div class="register-item">
-                                        <input type="radio" id="guest" name="register" value="guest">
-                                        <label for="guest" class="register-label shipping-text_dark">checkout as guest</label>
-                                    </div>
-                                    <div class="register-item">
-                                        <input type="radio" id="reg" name="register" value="reg">
-                                        <label for="reg" class="register-label shipping-text_dark">register</label>
-                                    </div>
-                                    <p class="shipping-text_dark register-form__shipping-text">register and save time!</p>
-                                    <p class="shipping-text">Register with us for future convenience</p>
-                                    <ul class="register-ul">
-                                        <li class="register-ul-item shipping-text"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</li>
-                                        <li class="register-ul-item shipping-text"><i class="fas fa-angle-double-right"></i> Easy access to your order history and status</li>
-                                    </ul>
-                                    <button class="white-button white-button_register">Continue</button>
-                                </form>
+            <div class="mycart-header">
+                <div class="mycart-header-item cart-details">Product Details</div>
+                <div class="mycart-header-item cart-unite">unite Price</div>
+                <div class="mycart-header-item cart-quantity">quantity</div>
+                <div class="mycart-header-item cart-shipping">shipping</div>
+                <div class="mycart-header-item cart-total">subtotal</div>
+                <div class="mycart-header-item cart-action">action</div>
+            </div>
+            <div class="mycart-product">
+                <div class="mycart-product-item cart-details">
+                    <a href="singlepage.html" class="cart-details-link">
+                        <div class="cart-details-block">
+                            <div class="cart-details-photo">
+                                <img src="images/incart1.jpg" alt="myproduct1">
                             </div>
-                            <div class="shipping-item">
-                                <form action="" class="login-form">
-                                    <div class="login-form-item">
-                                        <p class="shipping-text_dark">Already registed?</p>
-                                        <p class="shipping-text">Please log in below</p>     
-                                    </div>
-                                    <div class="login-form-item form-fields">
-                                        <label for="email" class="registered-label">EMAIL ADDRESS</label>
-                                        <input type="email" name="email" class="registered-input">
-                                        <label for="pass" class="registered-label">PASSWORD</label>
-                                        <input type="password" name="pass" class="registered-input">
-                                        <p class="shipping-text_red">* Required Fileds</p>
-                                    </div>
-
-                                    
-                                    <div class="register-btn-container">
-                                        <button class="white-button">Log in</button>
-                                        <p class="shipping-text-forgot"><a href="#">Forgot Password ?</a></p>
-                                    </div>
-                                </form>
-                            </div>
+                            <div class="cart-details-desc">
+                                <p class="det-prod-name">Mango  People  T-shirt</p>
+                                <p class="det-prod-color">
+                                    <b>Color:</b> red
+                                </p>
+                                <p class="det-prod-size">
+                                    <b>Size: </b>XII
+                                </p>
+                            </div>                            
                         </div>
-                    </div>
-                  </div>
+                    </a>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button accordion-button_checkout collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        02.   BILLING INFORMATION
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi maxime incidunt suscipit odio ratione molestias nam dignissimos doloribus optio! In hic facere excepturi, magnam eos totam itaque quae inventore ad illum dolorum sint molestias cupiditate. Ut corrupti, impedit error dignissimos tempora neque nisi, ex sunt perspiciatis fugiat minima autem cumque magni illo exercitationem? Inventore consectetur a eaque voluptatibus fuga iusto veniam explicabo itaque, error consequuntur necessitatibus dignissimos quod harum! Dolorem quis aliquam amet nisi odio deleniti inventore sunt eos? Quisquam molestias expedita est dolor! Vero officiis neque ad tempora sequi.
-                    </div>
-                  </div>
+                <div class="mycart-product-item cart-unite">$150</div>
+                <div class="mycart-product-item cart-quantity">
+                    <input type="number" value="2" class="cart-quantity-field">
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button accordion-button_checkout collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        03.   SHIPPING INFORMATION
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iste, rerum nulla numquam dolores tenetur nisi, impedit odio illo sequi quae assumenda atque velit voluptates odit maxime? Harum laboriosam obcaecati nisi cupiditate natus molestias doloremque, facilis ullam. Eum placeat ut atque nostrum ea, eius vero aliquam aspernatur alias quibusdam amet doloribus. Debitis dolore molestiae iure ad, commodi tenetur porro neque deleniti illum hic facere cum quasi minus, laudantium libero quia esse architecto, dolorem temporibus corporis ut sed! Ratione voluptates possimus, minus non aperiam magnam eligendi quam, officia alias aliquam, repellat beatae consectetur nobis modi laborum natus! Dolores sunt, quas odit maiores tenetur architecto corporis iure perferendis doloribus, optio officia ipsa ratione itaque illo deleniti ipsam debitis quisquam ea fugiat! Perferendis!
-                    </div>
-                  </div>
+                <div class="mycart-product-item cart-shipping">free</div>
+                <div class="mycart-product-item cart-total">$300</div>
+                <div class="mycart-product-item cart-action">
+                    <a href="#" class="cart-action-link"><i class="fas fa-times-circle"></i></a>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button accordion-button_checkout collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        04.   SHIPPING METHOD
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In dolore excepturi distinctio possimus iure. Sit unde adipisci quod eaque soluta incidunt molestiae laudantium, ab similique. Asperiores neque deserunt beatae ipsam, expedita, est, earum esse nisi nobis eaque assumenda sequi perferendis aperiam odio facilis? Ducimus reprehenderit aspernatur ipsa, similique ea nulla qui distinctio possimus doloribus nihil aliquid. Delectus sapiente recusandae earum possimus molestiae eius aut? Aspernatur in, dicta sint blanditiis error officia inventore odit fugit nesciunt aperiam perspiciatis asperiores placeat itaque?
-                      </div>
+            </div>
+            <div class="mycart-product">
+                <div class="mycart-product-item cart-details">
+                    <a href="singlepage.html" class="cart-details-link">
+                        <div class="cart-details-block">
+                            <div class="cart-details-photo">
+                                <img src="images/incart2.jpg" alt="myproduct1">
+                            </div>
+                            <div class="cart-details-desc">
+                                <p class="det-prod-name">Mango  People  T-shirt</p>
+                                <p class="det-prod-color">
+                                    <b>Color:</b> red
+                                </p>
+                                <p class="det-prod-size">
+                                    <b>Size: </b>XII
+                                </p>
+                            </div>                            
+                        </div>
+                    </a>
+                </div>
+                <div class="mycart-product-item cart-unite">$150</div>
+                <div class="mycart-product-item cart-quantity">
+                    <input type="number" value="2" class="cart-quantity-field">
+                </div>
+                <div class="mycart-product-item cart-shipping">free</div>
+                <div class="mycart-product-item cart-total">$300</div>
+                <div class="mycart-product-item cart-action">
+                    <a href="#" class="cart-action-link"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="mycart-product">
+                <div class="mycart-product-item cart-details">
+                    <a href="singlepage.html" class="cart-details-link">
+                        <div class="cart-details-block">
+                            <div class="cart-details-photo">
+                                <img src="images/incart3.jpg" alt="myproduct1">
+                            </div>
+                            <div class="cart-details-desc">
+                                <p class="det-prod-name">Mango  People  T-shirt</p>
+                                <p class="det-prod-color">
+                                    <b>Color:</b> red
+                                </p>
+                                <p class="det-prod-size">
+                                    <b>Size: </b>XII
+                                </p>
+                            </div>                            
+                        </div>
+                    </a>
+                </div>
+                <div class="mycart-product-item cart-unite">$150</div>
+                <div class="mycart-product-item cart-quantity">
+                    <input type="number" value="2" class="cart-quantity-field">
+                </div>
+                <div class="mycart-product-item cart-shipping">free</div>
+                <div class="mycart-product-item cart-total">$300</div>
+                <div class="mycart-product-item cart-action">
+                    <a href="#" class="cart-action-link"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="mycart-buttons">
+                <div class="mycart-buttons-item">
+                    <a href="#" class="white-button white-button-cart">cLEAR SHOPPING CART</a>
+                </div>
+                <div class="mycart-buttons-item">
+                    <a href="product.html" class="white-button white-button-cart">cONTINUE sHOPPING</a>
+                </div>
+            </div>
+            <div class="mycart-finish">
+                <div class="mycart-finish-item">
+                    <div class="finish-item-header">Shipping Adress</div>
+                    <form action="" class="finish-item-shipping">
+                        <select name="town" id="town" class="finish-form">
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Moscow">Moscow</option>
+                            <option value="Rome">Rome</option>
+                        </select>
+                        <input type="text" class="finish-state" value="State">
+                        <input type="text" class="finish-zip" value="Postcode / Zip">
+                        <button class="white-button white-button-small">get a quote</button>
+                    </form>
+                </div>
+                <div class="mycart-finish-item">
+                    <div class="finish-item-header">coupon  discount</div>
+                    <form action="" class="finish-item-shipping">
+                        <p class="finish-coupon">Enter your coupon code if you have one</p>
+                        <input type="text" class="finish-state" value="State">                        
+                        <button class="white-button white-button-small">Apply coupon</button>
+                    </form>
+                </div>
+                <div class="mycart-finish-item finish-item-total">
+                    <div class="finish-item-wrapper">
+                        <div class="finish-item-summ">
+                            <div class="finish-item-text">Sub total     $900</div>
+                            <div class="finish-item-header total-header">GRAND TOTAL <span class="total-price">$900</span></div>
+                        </div>
+                        <a href="checkout.html" class="btn-pink checkout-button">proceed to checkout</a>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button accordion-button_checkout collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        05.   PAYMENT METHOD
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nam accusantium maiores provident aspernatur dolorum veritatis exercitationem quidem dolore! Magni, eligendi, architecto libero dolores assumenda temporibus molestiae placeat consequuntur nesciunt quis minus sapiente? Inventore earum deleniti sunt voluptatibus odit ab facilis illo tempore itaque quas, sit animi reprehenderit iure laborum veniam molestias! Incidunt, voluptatum distinctio sed necessitatibus vel ullam? Magnam nesciunt voluptatibus possimus sed reprehenderit inventore aliquid totam deleniti molestiae dolore, adipisci sequi labore consequuntur odio laboriosam pariatur esse doloribus porro, libero rerum. Cumque, sed quod perferendis fugiat vel adipisci laborum libero enim porro architecto placeat quo repudiandae id voluptatum.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                      <button class="accordion-button accordion-button_checkout collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        06.   ORDER REVIEW
-                      </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolores sint dignissimos repellat voluptas odio, illum maxime magni, possimus ipsa iure ab placeat dolore alias et, tempora labore debitis laborum? Magni iure animi eligendi labore vel unde tempore pariatur omnis!
-                      </div>
-                    </div>
-                  </div>
-              </div>
+                </div>
+            </div>
         </div>
     </div>
     
